@@ -77,13 +77,7 @@ int i;
   }
  else if(Q->rear==MAX_QUEUE-1)
   {
-   for(i=Q->front;i<=Q->rear;i++)
-   {
-    Q->a[i-(Q->front)]=Q->a[i];
-   }
-   Q->rear=Q->rear-Q->front;
-   Q->front=0;
-   Q->rear=Q->rear+1;
+   Q->rear=0;
   }
  else
   {
